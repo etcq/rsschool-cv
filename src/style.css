@@ -5,11 +5,18 @@
     src: url('./fonts/KonstantGroteskBook.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
 
 body {
     background-color: rgb(27, 27, 27);
     color: #fff;
     font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -27,6 +34,12 @@ h1, h2 {
     text-shadow: 5px 5px 3px black;
     text-transform: uppercase;
 }
+
+p {
+    line-height: 30px;
+}
+
+
 
 .bg_blur-violet {
     position: absolute;
@@ -94,21 +107,40 @@ h1, h2 {
     z-index: -1;
 }
 
+header {
+    position: fixed;
+    text-align: center;
+    padding: 0;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 1240px;
+}
+
 nav {
     max-width: 1240px;
     display: flex;
-    margin: 0 auto;
     padding: 5px;
     height: 80px;
     justify-content: space-between;
     padding: 20px 20px;
     align-items: center;
-
 }
 
-nav>img {
-    width: 80px;
-    height: 80px;
+.header_wrapper>img {
+    width: 65px;
+    height: 65px;
 }
 
 .nav_menu {
@@ -147,6 +179,7 @@ main {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    margin-top: 90px;
 }
 
 .left_side {
@@ -222,4 +255,45 @@ h1 {
     font-weight: 500;
     text-align: left;
     margin: 8px 0 8px 0;
+}
+
+.code_wrapper {
+    margin: 0 auto;
+    width: 85%;
+    height: 250px;
+    background-color:#2D2D2D;
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+.code_text {
+    white-space: pre-wrap;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+footer {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+}
+
+.footer_container {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 22px;
+    align-items:center;
+    padding:  0 10px;
+}
+
+.footer_item>a>img {
+    width: 40px;
+    height: 40px;
 }

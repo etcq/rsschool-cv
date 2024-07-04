@@ -10,31 +10,34 @@
 
 <body>
     <div class="opacity_wrapper"></div>
-    <div class="bg_blur-violet"></div>
-    <div class="bg_blur-green"></div>
-    <div class="bg_blur-blue"></div>
-    <div class="bg_blur-skin"></div>
+
     <header>
-        <nav>
-            <img src="./img/CV_icon.png" alt="CV icon" />
-            <ul class="nav_menu">
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">Contacts</a></li>
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">About Me</a></li>
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">Education</a></li>
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">Skills</a></li>
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">Languages</a></li>
-                <li class="nav_menu-item"><a href="#" class="nav_menu-link">Code</a></li>
-            </ul>
-        </nav>
+        <div class="header_wrapper">
+            <img src="./img/profile.png" alt="CV icon" />
+            <nav>
+                <ul class="nav_menu">
+                    <li class="nav_menu-item"><a href="#contacts" class="nav_menu-link">Contacts</a></li>
+                    <li class="nav_menu-item"><a href="#about_me" class="nav_menu-link">About Me</a></li>
+                    <li class="nav_menu-item"><a href="#education" class="nav_menu-link">Education</a></li>
+                    <li class="nav_menu-item"><a href="#skills" class="nav_menu-link">Skills</a></li>
+                    <li class="nav_menu-item"><a href="#languages" class="nav_menu-link">Languages</a></li>
+                    <li class="nav_menu-item"><a href="#code" class="nav_menu-link">Code</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
+        <div class="bg_blur-violet"></div>
+        <div class="bg_blur-green"></div>
+        <div class="bg_blur-blue"></div>
+        <div class="bg_blur-skin"></div>
         <section class="left_side">
             <img src="./img/Me.png" alt="Me" class="avatar" />
             <article class="Contacts">
                 <h2>Contacts</h2>
                 <hr>
 
-                <ul class="contacts_list">
+                <ul class="contacts_list" id="contacts">
                     <li class="contacts_list-item"><a href="https://github.com/etcq">github.com/etcq</a></li>
                     <li class="contacts_list-item"><a
                             href="https://etcq.github.io/rsschool-cv/">https://etcq.github.io/rsschool-cv/</a></li>
@@ -43,7 +46,7 @@
                             Ekaterinburg</a></li>
                 </ul>
             </article>
-            <article class="Education">
+            <article class="Education" id="education">
                 <h2>Education</h2>
                 <hr>
                 <ul class="education_list">
@@ -67,7 +70,7 @@
         </section>
         <section class="right_side">
             <h1>Sushnikov Anton <br /> Future Front-End Developer</h1>
-            <article class="about_me">
+            <article class="about_me" id="about_me">
                 <h2>About Me</h2>
                 <hr>
                 <p> I am 30 years old, I have been working in the electric power industry for many years. I am involved
@@ -75,7 +78,7 @@
                     and in the process of finding myself, I discovered that I liked writing code. I wanted to do what I
                     loved and use it to improve our world.</p>
             </article>
-            <article class="skills">
+            <article class="skills" id="skills">
                 <h2>Skills</h2>
                 <hr>
                 <div class="skills_elem_wrapper">
@@ -117,14 +120,33 @@
                     </div>
                 </div>
             </article>
-            <article class="languages">
+            <article class="languages" id="languages">
                 <h2>languages</h2>
                 <hr>
                 <div class="languages_elem"><span>Russian</span><span>Native</span></div>
                 <div class="languages_elem"><span>English</span><span>A2</span></div>
             </article>
+            <article class="code" id="code">
+                <h2>Code Examples</h2>
+                <hr>
+                <div class="code_wrapper">
+                    <pre class="code_text">
+function bmi(weight, height) {
+    const bmi = weight / (height * height) 
+    let result = (bmi <= 18.5) ? 'Underweight' : (bmi <= 25.0) ? 'Normal' : (bmi <= 30.0) ? 'Overweight' : "Obese";
+    return result;
+}
+                    </pre>
+                </div>
+            </article>
         </section>
     </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_item"><a href="https://github.com/etcq"><img src="./img/github.png" alt="github"></a></div>
+            <div class="footer_item"><span>2024</span></div>
+            <div class="footer_item"><a href="https://rs.school/courses/javascript-ru"><img src="./img/Rsschool.png" alt="rsschool"></a></div>
+        </div>
+    </footer>
 </body>
-
 </html>
