@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>CV Anton Sushnikov</title>
 </head>
 
@@ -13,7 +13,7 @@
 
     <header>
         <div class="header_wrapper">
-            <img src="./img/profile.png" alt="CV icon" />
+            <img src="./img/profile.png" alt="CV icon">
             <nav>
                 <ul class="nav_menu">
                     <li class="nav_menu-item"><a href="#contacts" class="nav_menu-link">Contacts</a></li>
@@ -22,6 +22,7 @@
                     <li class="nav_menu-item"><a href="#skills" class="nav_menu-link">Skills</a></li>
                     <li class="nav_menu-item"><a href="#languages" class="nav_menu-link">Languages</a></li>
                     <li class="nav_menu-item"><a href="#code" class="nav_menu-link">Code</a></li>
+                    <li class="nav_menu-item"><a href="#projects" class="nav_menu-link">My Projects</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,8 +32,8 @@
         <div class="bg_blur-green"></div>
         <div class="bg_blur-blue"></div>
         <div class="bg_blur-skin"></div>
-        <section class="left_side">
-            <img src="./img/Me.jpeg" alt="Me" class="avatar" />
+        <div class="left_side">
+            <img src="./img/Me.jpeg" alt="Me" class="avatar">
             <article class="Contacts">
                 <h2>Contacts</h2>
                 <hr>
@@ -67,9 +68,9 @@
                     </li>
                 </ul>
             </article>
-        </section>
+        </div>
         <section class="right_side">
-            <h1>Sushnikov Anton <br /> Future Front-End Developer</h1>
+            <h1>Sushnikov Anton <br> Future Front-End Developer</h1>
             <article class="about_me" id="about_me">
                 <h2>About Me</h2>
                 <hr>
@@ -133,7 +134,7 @@
                     <pre class="code_text">
 function bmi(weight, height) {
     const bmi = weight / (height * height) 
-    let result = (bmi <= 18.5) ? 'Underweight' : (bmi <= 25.0) ? 'Normal' : (bmi <= 30.0) ? 'Overweight' : "Obese";
+    let result = (bmi &lt;= 18.5) ? 'Underweight' : (bmi &lt;= 25.0) ? 'Normal' : (bmi &lt;= 30.0) ? 'Overweight' : "Obese";
     return result;
 }
                     </pre>
